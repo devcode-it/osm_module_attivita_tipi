@@ -21,9 +21,8 @@
     "prefer-stable":true,
     "require": {
         "php": ">=8.0",
-        "devcode-it/openstamanager": "@dev"
-    }
-    ,
+        "devcode-it/openstamanager": "dev-rewrite"
+    },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     },
