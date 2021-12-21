@@ -1,14 +1,14 @@
-# Modulo di esempio
+# Tipi attività
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/openstamanager/example.module.svg?style=flat-square)](https://packagist.org/packages/openstamanager/example.module)
+[![Total Downloads](https://img.shields.io/packagist/dt/openstamanager/attivita.tipi.svg?style=flat-square)](https://packagist.org/packages/openstamanager/attivita.tipi)
 
 ## Install
 ```bash
-composer require openstamanager/example.module
+composer require openstamanager/attivita.tipi
 ```
 
 ## Usage
-Modulo di esempio per la costruzione di moduli personalizzati per OpenSTAManager
+Write a few lines about the usage of this package.
 
 ## Contributing
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
