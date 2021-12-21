@@ -1,0 +1,11 @@
+{
+  "name": "attivita.tipi",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build && gulp",
+    "build-watch": "vite build --watch",
+    "watch": "concurrently \"gulp watch\" npm:build-watch --raw"
+  },
+  "dependencies": {
+  }
+}
