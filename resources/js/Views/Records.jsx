@@ -1,9 +1,9 @@
-import {type ColumnT, type SectionT, RecordsPage} from 'openstamanager';
+import {type ColumnsT, type SectionsT, RecordsPage} from 'openstamanager';
 
 import TipoAttivita from '../Models/TipoAttivita';
 
 export default class Records extends RecordsPage {
-    columns: {[string]: [string]} | {[string]: ColumnT} = {
+    columns: ColumnsT = {
       codice: this.__('Codice'),
       descrizione: this.__('Descrizione'),
       addebitoOrario: {
@@ -32,7 +32,7 @@ export default class Records extends RecordsPage {
       }
     };
 
-    sections: SectionT[] = [
+    sections: SectionsT = [
       {
         fields: {
           codice: {
