@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import defineConfig from '@openstamanager/vite-config';
 import path from 'node:path';
 import url from 'node:url';
