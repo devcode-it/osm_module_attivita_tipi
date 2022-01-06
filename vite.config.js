@@ -5,9 +5,9 @@ import url from 'node:url';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'resources/js/index.js'),
+      entry: path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), 'resources/js/index.ts'),
       formats: ['es'],
-      fileName: 'index.js'
+      fileName: 'index.ts'
     },
     rollupOptions: {
       external: ['openstamanager']
