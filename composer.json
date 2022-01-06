@@ -1,57 +1,57 @@
 {
-    "name": "openstamanager/attivita.tipi",
-    "description": "Modulo Tipi Attività per OpenSTAManager",
-    "type": "openstamanager-module",
-    "license": "MIT",
-    "keywords": [
-		"openstamanager",
-		"gestionale",
-		"interventi",
-		"attivita",
-		"tipi",
-		"tipo"
-	],
-    "authors": [
-        {
-            "name": "Maicol Battistini",
-            "email": "maicolbattistini@live.it"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable":true,
-    "require": {
-        "php": ">=8.0",
-        "devcode-it/openstamanager": "dev-rewrite"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest"
-    },
-    "autoload": {
-        "psr-4": {
-            "Openstamanager\\TipiAttivita\\": "src/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Openstamanager\\TipiAttivita\\TipiAttivitaServiceProvider"
-            ]
-        },
-        "osm-modules": {
-            "attivita.tipi": {
-                "icon": "format-list-bulleted-type",
-                "parent-module": "openstamanager/attivita"
-            }
-        }
-    },
-    "repositories": {
-        "openstamanager": {
-            "type": "vcs",
-            "url": "https://github.com/Dasc3er/openstamanager"
-        }
+  "name": "openstamanager/attivita.tipi",
+  "description": "Modulo Tipi Attività per OpenSTAManager",
+  "type": "openstamanager-module",
+  "license": "MIT",
+  "keywords": [
+    "openstamanager",
+    "gestionale",
+    "interventi",
+    "attivita",
+    "tipi",
+    "tipo"
+  ],
+  "authors": [
+    {
+      "name": "Maicol Battistini",
+      "email": "maicolbattistini@live.it"
     }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0",
+    "devcode-it/openstamanager": "3.x-dev",
+    "wikimedia/composer-merge-plugin": "^2"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Openstamanager\\TipiAttivita\\": "src/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "composer.local.json"
+      ]
+    },
+    "laravel": {
+      "providers": [
+        "Openstamanager\\TipiAttivita\\TipiAttivitaServiceProvider"
+      ]
+    },
+    "osm-modules": {
+      "attivita.tipi": {
+        "icon": "format-list-bulleted-type",
+        "parent-module": "openstamanager/attivita"
+      }
+    }
+  }
 }
