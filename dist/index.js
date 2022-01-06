@@ -1,21 +1,7 @@
-import { Model, RecordsPage, __ } from '../../../index.ts';
+import { Model, RecordsPage, __ } from 'openstamanager';
 
-// noinspection JSUnusedGlobalSymbols
-/**
- * @property {string} codice
- * @property {string} descrizione
- * @property {number} addebitoOrario
- * @property {number} addebitoKm
- * @property {number} addebitoDirittoChiamata
- * @property {number} costoOrarioTecnico
- * @property {number} costoKmTecnico
- * @property {number} costoDirittoChiamataTecnico
- * @property {number} tempoStandard
- *
- * @inheritDoc
- */
 class TipoAttivita extends Model {
-  jsonApiType = 'attivita/tipi';
+  jsonApiType = "attivita/tipi";
 }
 
 class Records extends RecordsPage {
@@ -68,7 +54,7 @@ class Records extends RecordsPage {
           step: 0.01,
           suffix: "ore",
           type: "number",
-          value: 0
+          value: "0"
         }
       }
     },
@@ -89,7 +75,7 @@ class Records extends RecordsPage {
           suffix: "\u20AC",
           step: 0.01,
           type: "number",
-          value: 0
+          value: "0"
         },
         addebitoDirittoChiamata: {
           label: __("Addebito diritto di chiamata"),
@@ -97,7 +83,7 @@ class Records extends RecordsPage {
           suffix: "\u20AC",
           step: 0.01,
           type: "number",
-          value: 0
+          value: "0"
         }
       }
     },
@@ -110,7 +96,7 @@ class Records extends RecordsPage {
           suffix: "\u20AC",
           step: 0.01,
           type: "number",
-          value: 0
+          value: "0"
         },
         costoKmTecnico: {
           label: __("Costo km"),
@@ -118,7 +104,7 @@ class Records extends RecordsPage {
           suffix: "\u20AC",
           step: 0.01,
           type: "number",
-          value: 0
+          value: "0"
         },
         costoDirittoChiamataTecnico: {
           label: __("Costo diritto chiamata"),
@@ -126,7 +112,7 @@ class Records extends RecordsPage {
           suffix: "\u20AC",
           step: 0.01,
           type: "number",
-          value: 0
+          value: "0"
         }
       }
     }
