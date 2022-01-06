@@ -1,33 +1,33 @@
-import {type ColumnsT, type SectionsT, RecordsPage} from 'openstamanager';
+import {type ColumnsT, type SectionsT, RecordsPage, __} from 'openstamanager';
 
 import TipoAttivita from '../Models/TipoAttivita';
 
 export default class Records extends RecordsPage {
     columns: ColumnsT = {
-      codice: this.__('Codice'),
-      descrizione: this.__('Descrizione'),
+      codice: __('Codice'),
+      descrizione: __('Descrizione'),
       addebitoOrario: {
-        title: this.__('Addebito orario'),
+        title: __('Addebito orario'),
         type: 'numeric'
       },
       addebitoKm: {
-        title: this.__('Addebito km'),
+        title: __('Addebito km'),
         type: 'numeric'
       },
       addebitoDirittoChiamata: {
-        title: this.__('Addebito diritto di chiamata'),
+        title: __('Addebito diritto di chiamata'),
         type: 'numeric'
       },
       costoOrarioTecnico: {
-        title: this.__('Costo orario tecnico'),
+        title: __('Costo orario tecnico'),
         type: 'numeric'
       },
       costoKmTecnico: {
-        title: this.__('Costo km tecnico'),
+        title: __('Costo km tecnico'),
         type: 'numeric'
       },
       costoDirittoChiamataTecnico: {
-        title: this.__('Costo diritto di chiamata tecnico'),
+        title: __('Costo diritto di chiamata tecnico'),
         type: 'numeric'
       }
     };
@@ -36,32 +36,32 @@ export default class Records extends RecordsPage {
       {
         fields: {
           codice: {
-            label: this.__('Codice'),
+            label: __('Codice'),
             maxLength: 10,
             required: true
           },
           descrizione: {
-            label: this.__('Descrizione'),
+            label: __('Descrizione'),
             required: true
           },
           tempoStandard: {
-            label: this.__('Tempo standard'),
-            helper: this.__('Valore compreso tra 0,25 - 24 ore. Esempi: 60 minuti = 1 ora; 30 minuti = 0,5 ore; 15 minuti = 0,25 ore'),
+            label: __('Tempo standard'),
+            helper: __('Valore compreso tra 0,25 - 24 ore. Esempi: 60 minuti = 1 ora; 30 minuti = 0,5 ore; 15 minuti = 0,25 ore'),
             min: 0,
             max: 24,
             required: true,
             step: 0.01,
             suffix: 'ore',
             type: 'number',
-            value: 0
+            value: '0'
           }
         }
       },
       {
-        heading: this.__('Addebiti unari al cliente'),
+        heading: __('Addebiti unari al cliente'),
         fields: {
           addebitoOrario: {
-            label: this.__('Addebito orario'),
+            label: __('Addebito orario'),
             required: true,
             suffix: '€',
             step: 0.01,
@@ -69,49 +69,49 @@ export default class Records extends RecordsPage {
             value: '0'
           },
           addebitoKm: {
-            label: this.__('Addebito km'),
+            label: __('Addebito km'),
             required: true,
             suffix: '€',
             step: 0.01,
             type: 'number',
-            value: 0
+            value: '0'
           },
           addebitoDirittoChiamata: {
-            label: this.__('Addebito diritto di chiamata'),
+            label: __('Addebito diritto di chiamata'),
             required: true,
             suffix: '€',
             step: 0.01,
             type: 'number',
-            value: 0
+            value: '0'
           }
         }
       },
       {
-        heading: this.__('Costi unari del tecnico'),
+        heading: __('Costi unari del tecnico'),
         fields: {
           costoOrarioTecnico: {
-            label: this.__('Costo orario'),
+            label: __('Costo orario'),
             required: true,
             suffix: '€',
             step: 0.01,
             type: 'number',
-            value: 0
+            value: '0'
           },
           costoKmTecnico: {
-            label: this.__('Costo km'),
+            label: __('Costo km'),
             required: true,
             suffix: '€',
             step: 0.01,
             type: 'number',
-            value: 0
+            value: '0'
           },
           costoDirittoChiamataTecnico: {
-            label: this.__('Costo diritto chiamata'),
+            label: __('Costo diritto chiamata'),
             required: true,
             suffix: '€',
             step: 0.01,
             type: 'number',
-            value: 0
+            value: '0'
           }
         }
       }
