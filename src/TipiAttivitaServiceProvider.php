@@ -27,8 +27,6 @@ class TipiAttivitaServiceProvider extends ServiceProvider
 
         // $this->loadViewsFrom(__DIR__.'/resources/views', 'attivita.tipi');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
-        cache()->forever('modules.attivita.tipi.drawer_routes', $this->getDrawerRoutes());
     }
 
     /**
@@ -43,14 +41,5 @@ class TipiAttivitaServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/attivita.tipi.php' => config_path('attivita.tipi.php'),
             ], 'config');
         }
-    }
-
-    public function getDrawerRoutes() {
-        return [
-            'attivita.tipi' => [
-                'icon' => 'shape-outline',
-                'text' => __('Tipi attività')
-            ]
-        ];
     }
 }
