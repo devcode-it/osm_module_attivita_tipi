@@ -1,7 +1,16 @@
-import { Model, RecordsPage, __ } from 'openstamanager';
+import { Model, RecordsPage } from '../../../index.js';
 
 class TipoAttivita extends Model {
   jsonApiType = "attivita/tipi";
+  codice;
+  descrizione;
+  addebitoOrario;
+  addebitoKm;
+  addebitoDirittoChiamata;
+  costoOrarioTecnico;
+  costoKmTecnico;
+  costoDirittoChiamataTecnico;
+  tempoStandard;
 }
 
 class Records extends RecordsPage {

@@ -1,5 +1,5 @@
 import {
-  type ColumnsT, type SectionsT, __, RecordsPage
+  type ColumnsT, type SectionsT, RecordsPage
 } from 'openstamanager';
 
 import TipoAttivita from '../Models/TipoAttivita';
