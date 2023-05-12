@@ -1,5 +1,5 @@
 # Tipi attività
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Total Downloads](https://img.shields.io/packagist/dt/openstamanager/attivita.tipi.svg?style=flat-square)](https://packagist.org/packages/openstamanager/attivita.tipi)
 
 ## Install

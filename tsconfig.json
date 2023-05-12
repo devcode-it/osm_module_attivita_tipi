@@ -1,12 +1,16 @@
 {
+  "extends" : "vendor/devcode-it/openstamanager/tsconfig.json",
   "compilerOptions": {
     "experimentalDecorators": true,
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
-    "strictPropertyInitialization": false,
-    "jsx": "preserve",
+    "isolatedModules": true,
+    "useDefineForClassFields": false,
+    "jsx": "react",
+    "jsxFactory": "m",
+    "jsxFragmentFactory": "m.Fragment",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -16,9 +20,10 @@
       "dom.iterable"
     ],
     "baseUrl": ".",
+    "skipLibCheck": true,
     "paths": {
-      "@attivita.tipi/*": ["./resources/ts/*"],
-      "@osm/*": ["./vendor/devcode-it/openstamanager/resources/ts/*"]
+      "@attivita.tipi/*": ["resources/ts/*"],
+      "@osm/*": ["vendor/devcode-it/openstamanager/resources/ts/*"]
     }
   },
   "include": [

@@ -27,6 +27,8 @@
     "friendsofphp/php-cs-fixer" : "^3",
     "nunomaduro/larastan" : "^2.5.2",
     "orchestra/testbench" : "^8",
+    "vimeo/psalm": "^5",
+    "psalm/plugin-laravel": "^2",
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {

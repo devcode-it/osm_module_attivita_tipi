@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 import {RecordsTableColumnAttributes} from '@osm/Components/DataTable/RecordsTable';
 import RecordsTableColumn from '@osm/Components/DataTable/RecordsTableColumn';
 import RecordsPage from '@osm/Components/Pages/RecordsPage';

@@ -2,7 +2,6 @@
 
 namespace Openstamanager\TipiAttivita\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -18,8 +17,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class TipoAttivita extends Model
 {
-    use HasFactory;
-
     protected $table = 'attivita_tipi';
     protected $fillable = [
         'codice',
