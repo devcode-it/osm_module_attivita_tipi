@@ -8,7 +8,7 @@ class CreateTipiAttivitaTable extends Migration
 {
     public function up(): void
     {
-        Schema::create('attivita_tipi', function (Blueprint $table) {
+        Schema::create('attivita_tipi', static function (Blueprint $table) {
             $table->id();
             $table->string('codice', 25);
             $table->string('descrizione', 255);
