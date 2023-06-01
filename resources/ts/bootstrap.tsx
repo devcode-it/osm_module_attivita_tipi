@@ -14,5 +14,5 @@ import {VnodeCollection} from '@osm/typings/jsx';
 extend(
   Drawer.prototype,
   'entries',
-  (entries: VnodeCollection) => entries.put(__('Tipi attività'), <DrawerEntry route="attivita.tipi" icon={mdiFormatListBulleted}>{__('Tipi attività')}</DrawerEntry>)
+  (entries: VnodeCollection) => entries.put(__('Tipi attività'), <DrawerEntry href={route('attivita.tipi')} icon={mdiFormatListBulleted}>{__('Tipi attività')}</DrawerEntry>)
 );
