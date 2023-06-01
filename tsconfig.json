@@ -1,5 +1,4 @@
 {
-  "extends" : "vendor/devcode-it/openstamanager/tsconfig.json",
   "compilerOptions": {
     "experimentalDecorators": true,
     "target": "esnext",
