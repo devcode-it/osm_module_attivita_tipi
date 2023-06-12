@@ -8,8 +8,11 @@ dependencies:
     specifier: ^1.0.3
     version: 1.0.3(mithril@2.2.2)
   '@maicol07/material-web-additions':
-    specifier: ^1.2.13
-    version: 1.2.13(@material/web@1.0.0-pre.7)
+    specifier: ^1.2.15
+    version: 1.2.15(@material/web@1.0.0-pre.10)
+  '@marketto/codice-fiscale-utils':
+    specifier: ^2.1.1
+    version: 2.1.1
   '@material/mwc-snackbar':
     specifier: ^0.27.0
     version: 0.27.0
@@ -20,8 +23,8 @@ dependencies:
     specifier: ^14.0.0
     version: 14.0.0
   '@material/web':
-    specifier: 1.0.0-pre.7
-    version: 1.0.0-pre.7
+    specifier: 1.0.0-pre.10
+    version: 1.0.0-pre.10
   '@mdi/js':
     specifier: ^7.2.96
     version: 7.2.96
@@ -35,26 +38,23 @@ dependencies:
     specifier: npm:@maicol07/coloquent@3.0.1-beta
     version: /@maicol07/coloquent@3.0.1-beta
   dayjs:
-    specifier: ^1.11.7
-    version: 1.11.7
+    specifier: ^1.11.8
+    version: 1.11.8
   include-media:
     specifier: ^2.0.0
     version: 2.0.0
   lit:
-    specifier: ^2.7.4
-    version: 2.7.4
+    specifier: ^2.7.5
+    version: 2.7.5
   mithril:
     specifier: ^2.2.2
     version: 2.2.2
   mithril-utilities:
-    specifier: ^1.1.2
-    version: 1.1.2(mithril@2.2.2)
+    specifier: ^1.2.0
+    version: 1.2.0(mithril@2.2.2)
   modern-normalize:
-    specifier: ^1.1.0
-    version: 1.1.0
-  openstamanager:
-    specifier: file:vendor/devcode-it/openstamanager
-    version: file:vendor/devcode-it/openstamanager(@formkit/auto-animate@1.0.0-beta.6)(@maicol07/coloquent@3.0.1-beta)(@maicol07/inertia-mithril@1.0.3)(@maicol07/material-web-additions@1.2.13)(@material/mwc-snackbar@0.27.0)(@material/mwc-top-app-bar@0.27.0)(@material/theme@14.0.0)(@material/web@1.0.0-pre.7)(@mdi/js@7.2.96)(classnames@2.3.2)(collect.js@4.36.1)(dayjs@1.11.7)(include-media@2.0.0)(lit@2.7.4)(mithril-utilities@1.1.2)(mithril@2.2.2)(modern-normalize@1.1.0)(postcss-scss@4.0.6)(prntr@2.0.18)(readable-http-codes@1.1.1)(ts-pattern@4.2.3)(typescript-cookie@1.0.6)
+    specifier: ^2.0.0
+    version: 2.0.0
   postcss-scss:
     specifier: ^4.0.6
     version: 4.0.6
@@ -65,8 +65,8 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1
   ts-pattern:
-    specifier: ^4.2.3
-    version: 4.2.3
+    specifier: ^4.3.0
+    version: 4.3.0
   typescript-cookie:
     specifier: ^1.0.6
     version: 1.0.6
@@ -239,8 +239,8 @@ packages:
       - debug
     dev: false
 
-  /@maicol07/material-web-additions@1.2.13(@material/web@1.0.0-pre.7):
-    resolution: {integrity: sha512-9XWWZW7KFKF3/RZ/tbKIa3LI64V7jj+ps7les9S65r6fPnfNlOzznAZoxAtzWEDhrRqMqCmHK6a/ZYBVl+TRcA==}
+  /@maicol07/material-web-additions@1.2.15(@material/web@1.0.0-pre.10):
+    resolution: {integrity: sha512-p+T6x6AtWwJA13LRiy2ckgh+Y05Gn+9Hu+bSjvtUWp24EJD9Xx9ndj+6TdHo6Ka0LdRGbOJBURZDg8ULkS4aYQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       '@material/web': ^1.0.0-pre.7
@@ -249,15 +249,27 @@ packages:
       '@material/data-table': 14.0.0
       '@material/layout-grid': 14.0.0
       '@material/mwc-base': 0.27.0
-      '@material/web': 1.0.0-pre.7
-      lit: 2.7.4
-      tslib: 2.5.0
+      '@material/web': 1.0.0-pre.10
+      lit: 2.7.5
+      tslib: 2.5.3
+    dev: false
+
+  /@marketto/codice-fiscale-utils@2.1.1:
+    resolution: {integrity: sha512-pWKO5c/YvGQXjVIoL3ama+AzI08AwE84NKlymBk2BqYCojcRS5MnmbRZpE0n6Ub5zTYXVACDUd/xxSLI6u+cBA==}
+    engines: {node: ^16.0.0}
+    dependencies:
+      '@marketto/diacritic-remover': 1.0.8
+      moment: 2.29.4
+    dev: false
+
+  /@marketto/diacritic-remover@1.0.8:
+    resolution: {integrity: sha512-3+id6HpZ8ktk4YVZvqiU3Y8k9WwEanEp5Pj7m6nE2YhIg4AwGCWqAkG2KmtM1fu01mL1YjP/Hhr/SaJreWDO2Q==}
     dev: false
 
   /@material/animation@14.0.0:
     resolution: {integrity: sha512-VlYSfUaIj/BBVtRZI8Gv0VvzikFf+XgK0Zdgsok5c1v5DDnNz5tpB8mnGrveWz0rHbp1X4+CWLKrTwNmjrw3Xw==}
     dependencies:
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/animation@14.0.0-canary.53b3cad2f.0:
@@ -269,7 +281,7 @@ packages:
   /@material/base@14.0.0:
     resolution: {integrity: sha512-Ou7vS7n1H4Y10MUZyYAbt6H0t67c6urxoCgeVT7M38aQlaNUwFMODp7KT/myjYz2YULfhu3PtfSV3Sltgac9mA==}
     dependencies:
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/base@14.0.0-canary.53b3cad2f.0:
@@ -306,7 +318,7 @@ packages:
       '@material/rtl': 14.0.0
       '@material/shape': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/checkbox@14.0.0:
@@ -321,7 +333,7 @@ packages:
       '@material/ripple': 14.0.0
       '@material/theme': 14.0.0
       '@material/touch-target': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/data-table@14.0.0:
@@ -344,13 +356,13 @@ packages:
       '@material/theme': 14.0.0
       '@material/touch-target': 14.0.0
       '@material/typography': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/density@14.0.0:
     resolution: {integrity: sha512-NlxXBV5XjNsKd8UXF4K/+fOXLxoFNecKbsaQO6O2u+iG8QBfFreKRmkhEBb2hPPwC3w8nrODwXX0lHV+toICQw==}
     dependencies:
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/density@14.0.0-canary.53b3cad2f.0:
@@ -363,7 +375,7 @@ packages:
     resolution: {integrity: sha512-8t88XyacclTj8qsIw9q0vEj4PI2KVncLoIsIMzwuMx49P2FZg6TsLjor262MI3Qs00UWAifuLMrhnOnfyrbe7Q==}
     dependencies:
       '@material/feature-targeting': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/dom@14.0.0-canary.53b3cad2f.0:
@@ -381,7 +393,7 @@ packages:
       '@material/feature-targeting': 14.0.0
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/elevation@14.0.0-canary.53b3cad2f.0:
@@ -417,7 +429,7 @@ packages:
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
       '@material/typography': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/focus-ring@14.0.0:
@@ -449,7 +461,7 @@ packages:
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
       '@material/touch-target': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/icon-button@14.0.0-canary.53b3cad2f.0:
@@ -471,7 +483,7 @@ packages:
   /@material/layout-grid@14.0.0:
     resolution: {integrity: sha512-tAce0PR/c85VI2gf1HUdM0Y15ZWpfZWAFIwaCRW1+jnOLWnG1/aOJYLlzqtVEv2m0TS1R1WRRGN3Or+CWvpDRA==}
     dependencies:
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/line-ripple@14.0.0:
@@ -481,7 +493,7 @@ packages:
       '@material/base': 14.0.0
       '@material/feature-targeting': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/linear-progress@14.0.0:
@@ -494,7 +506,7 @@ packages:
       '@material/progress-indicator': 14.0.0
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/list@14.0.0:
@@ -509,7 +521,7 @@ packages:
       '@material/shape': 14.0.0
       '@material/theme': 14.0.0
       '@material/typography': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/menu-surface@14.0.0:
@@ -522,7 +534,7 @@ packages:
       '@material/rtl': 14.0.0
       '@material/shape': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/menu@14.0.0:
@@ -537,7 +549,7 @@ packages:
       '@material/ripple': 14.0.0
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/mwc-base@0.27.0:
@@ -545,7 +557,7 @@ packages:
     dependencies:
       '@material/base': 14.0.0-canary.53b3cad2f.0
       '@material/dom': 14.0.0-canary.53b3cad2f.0
-      lit: 2.7.4
+      lit: 2.7.5
       tslib: 2.5.0
     dev: false
 
@@ -554,7 +566,7 @@ packages:
     dependencies:
       '@material/mwc-base': 0.27.0
       '@material/snackbar': 14.0.0-canary.53b3cad2f.0
-      lit: 2.7.4
+      lit: 2.7.5
       tslib: 2.5.0
     dev: false
 
@@ -563,7 +575,7 @@ packages:
     dependencies:
       '@material/mwc-base': 0.27.0
       '@material/top-app-bar': 14.0.0-canary.53b3cad2f.0
-      lit: 2.7.4
+      lit: 2.7.5
       tslib: 2.5.0
     dev: false
 
@@ -576,13 +588,13 @@ packages:
       '@material/rtl': 14.0.0
       '@material/shape': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/progress-indicator@14.0.0:
     resolution: {integrity: sha512-09JRTuIySxs670Tcy4jVlqCUbyrO+Ad6z3nHnAi8pYl74duco4n/9jTROV0mlFdr9NIFifnd08lKbiFLDmfJGQ==}
     dependencies:
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/ripple@14.0.0:
@@ -594,7 +606,7 @@ packages:
       '@material/feature-targeting': 14.0.0
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/ripple@14.0.0-canary.53b3cad2f.0:
@@ -613,7 +625,7 @@ packages:
     resolution: {integrity: sha512-xl6OZYyRjuiW2hmbjV2omMV8sQtfmKAjeWnD1RMiAPLCTyOW9Lh/PYYnXjxUrNa0cRwIIbOn5J7OYXokja8puA==}
     dependencies:
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/rtl@14.0.0-canary.53b3cad2f.0:
@@ -644,7 +656,7 @@ packages:
       '@material/theme': 14.0.0
       '@material/tokens': 14.0.0
       '@material/typography': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/shape@14.0.0:
@@ -653,7 +665,7 @@ packages:
       '@material/feature-targeting': 14.0.0
       '@material/rtl': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/shape@14.0.0-canary.53b3cad2f.0:
@@ -729,7 +741,7 @@ packages:
       '@material/base': 14.0.0
       '@material/feature-targeting': 14.0.0
       '@material/rtl': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/touch-target@14.0.0-canary.53b3cad2f.0:
@@ -746,7 +758,7 @@ packages:
     dependencies:
       '@material/feature-targeting': 14.0.0
       '@material/theme': 14.0.0
-      tslib: 2.5.0
+      tslib: 2.5.3
     dev: false
 
   /@material/typography@14.0.0-canary.53b3cad2f.0:
@@ -757,10 +769,10 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@material/web@1.0.0-pre.7:
-    resolution: {integrity: sha512-/gHoUq+7Iose64BGyBurSXkAwVv4PNdAawX4SJkeDUObUPgvLH5vZBD8/fVGWu7TEq0xSgh10uqwV81P5r5BAw==}
+  /@material/web@1.0.0-pre.10:
+    resolution: {integrity: sha512-v7St+7NtZQc9yuLgU2+RIK+hGp/FVG1mr6qCvqIdOCMAKOPP+WNxGVGxmOgpBgJIGFZ83o4c6vnEXEODreWjlQ==}
     dependencies:
-      lit: 2.7.4
+      lit: 2.7.5
       safevalues: 0.4.3
       tslib: 2.5.0
     dev: false
@@ -1188,8 +1200,8 @@ packages:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
     dev: false
 
-  /dayjs@1.11.7:
-    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+  /dayjs@1.11.8:
+    resolution: {integrity: sha512-LcgxzFoWMEPO7ggRv1Y2N31hUf2R0Vj7fuy/m+Bg1K8rr+KAs1AEy4y9jd5DXe8pbHgX+srkHNS7TH6Q6ZhYeQ==}
     dev: false
 
   /debug@3.2.7:
@@ -2183,8 +2195,8 @@ packages:
       '@types/trusted-types': 2.0.3
     dev: false
 
-  /lit@2.7.4:
-    resolution: {integrity: sha512-cgD7xrZoYr21mbrkZIuIrj98YTMw/snJPg52deWVV4A8icLyNHI3bF70xsJeAgwTuiq5Kkd+ZR8gybSJDCPB7g==}
+  /lit@2.7.5:
+    resolution: {integrity: sha512-i/cH7Ye6nBDUASMnfwcictBnsTN91+aBjXoTHF2xARghXScKxpD4F4WYI+VLXg9lqbMinDfvoI7VnZXjyHgdfQ==}
     dependencies:
       '@lit/reactive-element': 1.6.1
       lit-element: 3.3.2
@@ -2259,8 +2271,8 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
 
-  /mithril-utilities@1.1.2(mithril@2.2.2):
-    resolution: {integrity: sha512-dHLyjWe1W4Ixu0+AVpGIBeBFycRFF2RGIFZ9ihrweRrUXoxETXjCmuSx8YSGv+OZ53Abbmy7USDNPw5mjoyd7A==}
+  /mithril-utilities@1.2.0(mithril@2.2.2):
+    resolution: {integrity: sha512-adp4pkc30IC44sTmXpvuP6/GU5glz4T2raVANLbkOusGfxM8rMn911eukiWlsfZGRu5zsiDNc71hnZ+90U6Sdg==}
     peerDependencies:
       mithril: ^2.0.4
     dependencies:
@@ -2278,9 +2290,13 @@ packages:
       ospec: 4.0.0
     dev: false
 
-  /modern-normalize@1.1.0:
-    resolution: {integrity: sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA==}
+  /modern-normalize@2.0.0:
+    resolution: {integrity: sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==}
     engines: {node: '>=6'}
+    dev: false
+
+  /moment@2.29.4:
+    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
     dev: false
 
   /ms@2.1.2:
@@ -2776,8 +2792,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-pattern@4.2.3:
-    resolution: {integrity: sha512-tPg2/owaVtWiimsmXpFEzI5IcfPU2BEwzFbviuSmqqaKIGyy6hyvBF4kxcuhy8UJz+6nEKUOEeaHc43drIuvpQ==}
+  /ts-pattern@4.3.0:
+    resolution: {integrity: sha512-pefrkcd4lmIVR0LA49Imjf9DYLK8vtWhqBPA3Ya1ir8xCW0O2yjL9dsCVvI7pCodLC5q7smNpEtDR2yVulQxOg==}
     dev: false
 
   /tsconfig-paths@3.14.2:
@@ -2795,6 +2811,10 @@ packages:
 
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+    dev: false
+
+  /tslib@2.5.3:
+    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
     dev: false
 
   /tsutils@3.21.0(typescript@5.0.4):
@@ -2925,59 +2945,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  file:vendor/devcode-it/openstamanager(@formkit/auto-animate@1.0.0-beta.6)(@maicol07/coloquent@3.0.1-beta)(@maicol07/inertia-mithril@1.0.3)(@maicol07/material-web-additions@1.2.13)(@material/mwc-snackbar@0.27.0)(@material/mwc-top-app-bar@0.27.0)(@material/theme@14.0.0)(@material/web@1.0.0-pre.7)(@mdi/js@7.2.96)(classnames@2.3.2)(collect.js@4.36.1)(dayjs@1.11.7)(include-media@2.0.0)(lit@2.7.4)(mithril-utilities@1.1.2)(mithril@2.2.2)(modern-normalize@1.1.0)(postcss-scss@4.0.6)(prntr@2.0.18)(readable-http-codes@1.1.1)(ts-pattern@4.2.3)(typescript-cookie@1.0.6):
-    resolution: {directory: vendor/devcode-it/openstamanager, type: directory}
-    id: file:vendor/devcode-it/openstamanager
-    name: openstamanager
-    version: 0.0.0
-    requiresBuild: true
-    peerDependencies:
-      '@formkit/auto-animate': 1.0.0-beta.6
-      '@maicol07/inertia-mithril': ^1.0.3
-      '@maicol07/material-web-additions': ^1.2.11
-      '@material/mwc-linear-progress': ^0.27.0
-      '@material/mwc-snackbar': ^0.27.0
-      '@material/mwc-top-app-bar': ^0.27.0
-      '@material/textfield': ^14.0.0
-      '@material/theme': ^14.0.0
-      '@material/web': 1.0.0-pre.6
-      '@mdi/js': ^7.2.96
-      classnames: ^2.3.2
-      collect.js: ^4.36.1
-      coloquent: npm:@maicol07/coloquent@^3.0.1-beta
-      dayjs: ^1.11.7
-      include-media: ^2.0.0
-      lit: ^2.7.2
-      mithril: ^2.2.2
-      mithril-utilities: ^1.1.0
-      modern-normalize: ^1.1.0
-      postcss-scss: ^4.0.6
-      prntr: ^2.0.18
-      readable-http-codes: ^1.1.1
-      ts-pattern: ^4.2.2
-      typescript-cookie: ^1.0.5
-    dependencies:
-      '@formkit/auto-animate': 1.0.0-beta.6
-      '@maicol07/inertia-mithril': 1.0.3(mithril@2.2.2)
-      '@maicol07/material-web-additions': 1.2.13(@material/web@1.0.0-pre.7)
-      '@material/mwc-snackbar': 0.27.0
-      '@material/mwc-top-app-bar': 0.27.0
-      '@material/theme': 14.0.0
-      '@material/web': 1.0.0-pre.7
-      '@mdi/js': 7.2.96
-      classnames: 2.3.2
-      collect.js: 4.36.1
-      coloquent: /@maicol07/coloquent@3.0.1-beta
-      dayjs: 1.11.7
-      include-media: 2.0.0
-      lit: 2.7.4
-      mithril: 2.2.2
-      mithril-utilities: 1.1.2(mithril@2.2.2)
-      modern-normalize: 1.1.0
-      postcss-scss: 4.0.6
-      prntr: 2.0.18
-      readable-http-codes: 1.1.1
-      ts-pattern: 4.2.3
-      typescript-cookie: 1.0.6
-    dev: false
