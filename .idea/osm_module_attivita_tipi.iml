@@ -166,6 +166,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/psalm/plugin-laravel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/array-to-xml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vimeo/psalm" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
