@@ -3,9 +3,9 @@
 function readPackage(pkg) {
   /** @type {object} */
   if (pkg.name === 'openstamanager') {
-    pkg.peerDependencies = {
+    pkg.dependencies = {
       ...pkg.dependencies,
-      ...pkg.peerDependencies,
+      ...pkg.devDependencies,
     }
   }
   return pkg;

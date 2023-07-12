@@ -51,6 +51,11 @@
     },
     "inertia": {
       "openstamanager/attivita.tipi": "resources/ts/Views"
+    },
+    "merge-plugin": {
+      "include": [
+        "composer.local.json"
+      ]
     }
   }
 }
