@@ -1,27 +1,20 @@
-import Model, {
-  ModelAttributes,
-  ModelRelations
-} from '@osm/Models/Model';
+import Record from '@osm/Models/Record';
+import {
+  Attr,
+  Model
+} from 'spraypaint';
 
-// noinspection JSUnusedGlobalSymbols
+@Model()
+export default class TipoAttivita extends Record {
+  static jsonapiType: string = 'attivita__tipi';
 
-export interface TipoAttivitaAttributes extends ModelAttributes {
-  codice: string;
-  descrizione: string;
-  addebitoOrario: number;
-  addebitoKm: number;
-  addebitoDirittoChiamata: number;
-  costoOrarioTecnico: number;
-  costoKmTecnico: number;
-  costoDirittoChiamataTecnico: number;
-  tempoStandard: number;
-}
-
-export interface TipoAttivitaRelations extends ModelRelations {
-}
-
-export default class TipoAttivita extends Model<TipoAttivitaAttributes, TipoAttivitaRelations> {
-  static get jsonApiType(): string {
-    return 'attivita__tipi';
-  }
+  @Attr() codice!: string;
+  @Attr() descrizione!: string;
+  @Attr() addebitoOrario!: number;
+  @Attr() addebitoKm!: number;
+  @Attr() addebitoDirittoChiamata!: number;
+  @Attr() costoOrarioTecnico!: number;
+  @Attr() costoKmTecnico!: number;
+  @Attr() costoDirittoChiamataTecnico!: number;
+  @Attr() tempoStandard!: number;
 }

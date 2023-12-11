@@ -8,11 +8,11 @@
 import {mdiFormatListBulleted} from '@mdi/js';
 import {extend} from '@osm/Components/extend/extend';
 import Drawer from '@osm/Components/layout/Drawer';
-import {DrawerEntry} from '@osm/Components/layout/DrawerEntry';
+import {DrawerItem} from '@osm/Components/layout/DrawerItem';
 import {VnodeCollection} from '@osm/typings/jsx';
 
 extend(
   Drawer.prototype,
   'entries',
-  (entries: VnodeCollection) => entries.put(__('Tipi attività'), <DrawerEntry href={route('attivita.tipi')} icon={mdiFormatListBulleted}>{__('Tipi attività')}</DrawerEntry>)
+  (entries: VnodeCollection) => entries.put(__('Tipi attività'), <DrawerItem href={route('attivita.tipi')} icon={mdiFormatListBulleted}>{__('Tipi attività')}</DrawerItem>)
 );

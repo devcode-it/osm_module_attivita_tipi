@@ -57,5 +57,11 @@
         "composer.local.json"
       ]
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "github",
+      "url": "https://github.com/maicol07/laravel-restify.git"
+    }
+  ]
 }
